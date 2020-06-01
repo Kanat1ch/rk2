@@ -1,0 +1,94 @@
+@media screen and (max-width: 426px) {
+    header {
+        padding: 0 9%;
+    }
+    
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+        position: fixed;
+        padding: 55px 20px 0;
+        background-color: rgb(116, 116, 116);
+        width: 100%;
+        height: 230px;
+        left: 0;
+        top: 0;
+    }
+
+    .mobile-nav li {
+        list-style: none;
+        margin: 15px;
+    }
+
+    .mobile-nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    span.burger, span.burger::before, span.burger::after {
+        display: block;
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        background-color: #fff;
+        z-index: 1;
+    }
+
+    span.burger::before {
+        content: '';
+        top: -8px;
+    }
+
+    span.burger::after {
+        content: '';
+        top: 8px;
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+
+    #mainh1 {
+        font-size: 28px;
+        margin-top: 100px;
+    }
+
+    .main a {
+        width: 180px;
+        height: 30px;
+        margin-top: 20px;
+    }
+
+    .request {
+        background-image: none;
+        background-color: rgb(41, 41, 41);
+    }
+
+    .request h4 {
+        font-size: 18px;
+    }
+
+    .description {
+        padding: 3%;
+    }
+
+    .description p, .description li {
+        font-size: 12px;
+    }
+
+    .description h3 {
+        font-size: 14px;
+    }
+
+    .request button {
+        width: 250px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}
