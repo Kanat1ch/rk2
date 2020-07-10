@@ -117,6 +117,7 @@ ul li ul:hover {
 .description {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     height: 270px;
     background-color: rgb(95, 95, 95);
     color: #fff;

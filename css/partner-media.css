@@ -1,7 +1,10 @@
-@media screen and (max-width: 426px) {
-
+@media screen and (max-width: 1080px) {
     header {
         padding: 0 9%;
+    }
+
+    .header-logo {
+        display: none;
     }
     
     .desktop-nav {
@@ -53,6 +56,10 @@
         display: block;
     }
 
+}
+
+@media screen and (max-width: 660px) {
+
     nav {
         display: none;
     }
@@ -81,5 +88,86 @@
 
     footer {
         font-size: 10px;
+    }
+}
+
+@media print {
+
+    @page {
+        margin: 1cm;
+    }
+
+    header {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        background: none;
+    }
+
+    .main h1 {
+        color: #000;
+        font-size: 38px;
+        text-shadow: none;
+        margin: 15px;
+    }
+
+    .main p {
+        color: #000;
+        text-shadow: none;
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    .description {
+        background: none;
+        padding: 0;
+    }
+
+    .description p {
+        color: #000;
+    }
+
+    .description li {
+        color: #000;
+    }
+
+    .col {
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .col p {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .col h3 {
+        color: #000;
+        font-size: 22px;
+        margin: 10px;
+    }
+
+    .col ul {
+        text-align-last: left;
+    }
+
+    ul li {
+        list-style: circle;
+        padding-left: 10px;
+    }
+
+    i.fa {
+        display: none;
+    }
+
+    footer {
+        background-color: #f1f1f1;
+        color: #000;
+        border-top: none;
     }
 }

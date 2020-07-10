@@ -56,67 +56,97 @@
         display: block;
     }
 
+    .news-item a {
+        font-size: 16px;
+    }
+
+    .news-item i.fa {
+        font-size: 20px;
+    }
+
+    .events .event-item {
+        width: 49%;
+        margin-bottom: 15px;
+    }
+
 }
 
-@media screen and (max-width: 426px) {
-    
-    #mainh1 {
-        font-size: 28px;
-        margin-top: 100px;
+@media screen and (max-width: 500px) {
+
+    main {
+        padding: 0 3%;
     }
 
-    .main a {
-        width: 180px;
-        height: 30px;
-        margin-top: 20px;
+    .title {
+        font-size: 16px;
     }
 
-    .request {
-        background-image: none;
-        background-color: rgb(41, 41, 41);
+    .news-item {
+        padding-right: 60px;
     }
 
-    .request h4 {
-        font-size: 18px;
+    .events .event-item {
+        width: 100%;
     }
 
-    .description {
-        padding: 3%;
+    #search {
+        width: 130px;
     }
 
-    .description p, .description li {
-        font-size: 12px;
+    #delete {
+        right: 0;
     }
 
-    .description h3 {
+    #edit {
+        right: 25px;
+    }
+
+    .news-item a {
         font-size: 14px;
-    }
-
-    .request button {
-        width: 250px;
-    }
-
-    footer {
-        font-size: 10px;
     }
 }
 
 @media print {
-
-    @page {
-        margin: 1cm;
-    }
-
-    .topnav {
+    header, .topbg, #search, #add-news, i.fa {
         display: none;
     }
 
-    .description {
+    hr {
+        background: #000;
+        height: 2px;
+    }
+
+    main {
+        padding: 0 3%;
+    }
+
+    .news-item {
+        width: 100%;
+        padding: 0;
+    }
+
+    .events {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    a.event-item {
+        width: 100%;
+        padding: 20px;
+        height: auto;
         background: none;
     }
 
-    .request {
-        display: none;
+    .events .event-item .desc {
+        padding: 0;
+    }
+
+    .event-item .date {
+        position: relative;
+        top: 0;
+        left: 0;
     }
 
     footer {
