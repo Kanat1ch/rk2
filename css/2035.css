@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+    background-color: rgba(146, 146, 146, 0.7);
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.header-logo {
+    margin-left: 9%;
+}
+
+.toggle-menu {
+    display: block;
+}
+
+nav.desktop-nav {
+    font-family: monospace;
+    margin: 0 auto;
+}
+
+.desktop-nav ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.desktop-nav li {
+    color: #fff;  
+    display: block;
+    float: left;
+    padding: 1rem 3rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+nav.desktop-nav > ul > li {
+    margin: 0 20px;
+}
+
+.desktop-nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.desktop-nav li:hover {
+    background: rgb(56, 56, 56);
+    cursor: pointer;
+}
+
+.desktop-nav ul li ul {
+    background-color: rgba(146, 146, 146, 0.9);
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.desktop-nav ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.desktop-nav ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+.topbg {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background: url(../img/maxresdefault.jpg) no-repeat;
+    background-size: cover;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(78, 78, 78);
+    color: #fff;
+    height: 30px;
+    margin-top: 30px;
+}
+
+main {
+    margin-top: 100px;
+    padding: 0 10%;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.news-item {
+    margin-bottom: 20px;
+    position: relative;
+    padding-right: 150px;
+}
+
+.news-item button {
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    top: 17px;
+}
+
+button:active {
+    border: none;
+    outline: none;
+}
+
+.panel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#add-news {
+    width: 200px;
+    height: 35px;
+    background: rgb(107, 230, 91);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 7px;
+    color: #fff;
+    font-weight: 700;
+    transition: .1s linear;
+}
+
+#add-news:hover {
+    background: rgb(69, 221, 49);
+}
+
+
+#search {
+    height: 25px;
+    margin-left: 20px;
+    padding: 7px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #666;
+}
+
+#search-btn {
+    height: 25px;
+    /* margin-left: 5px; */
+    width: 30px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#search-btn:hover {
+    cursor: pointer;
+}
+
+#search-btn i.fa {
+    font-size: 22px;
+}
+
+i.fa-pencil-square-o {
+    color: rgb(89, 109, 223);
+}
+
+i.fa-trash-o {
+    color: rgb(238, 41, 41);
+}
+
+#edit {
+    right: 60px;
+}
+
+#delete {
+    right: 30px;
+    top: 14px;
+}
+
+.news-item i.fa {
+    font-size: 30px;
+}
+
+.news {
+    margin-bottom: 50px;
+}
+
+.news a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 22px;
+    transition: .1s linear;
+}
+
+.news a:hover {
+    color: red;
+}
+
+.date {
+    color: #555;
+    margin-bottom: 5px;
+}
+
+hr {
+    height: 4px;
+    background: linear-gradient(to right, red, transparent 100%);
+    margin-top: 20px;
+    border: none;
+}
+
+.events {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+a.event-item {
+    position: relative;
+    width: 23%;
+    height: 150px;
+    background: linear-gradient(135deg, rgb(159, 206, 223), rgb(236, 243, 242) 95%);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: .2s ease-in;
+}
+
+.event-item .date {
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+    color: #000;
+}
+
+.event-item p.desc {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(73, 73, 73);
+    text-decoration: none;
+}
+
+.event-item:hover {
+    transform: scale(1.05) translateY(-15px);
+}
