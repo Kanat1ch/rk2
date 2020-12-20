@@ -58,42 +58,32 @@
 
 }
 
-@media screen and (max-width: 426px) {
-    
-    #mainh1 {
+@media screen and (max-width: 660px) {
+
+    nav {
+        display: none;
+    }
+
+    .main {
+        height: 70vh;
+        padding: 130px 9% 0;
+    }
+
+    .main h1 {
         font-size: 28px;
-        margin-top: 100px;
     }
 
-    .main a {
-        width: 180px;
-        height: 30px;
-        margin-top: 20px;
-    }
-
-    .request {
-        background-image: none;
-        background-color: rgb(41, 41, 41);
-    }
-
-    .request h4 {
-        font-size: 18px;
-    }
-
-    .description {
-        padding: 3%;
-    }
-
-    .description p, .description li {
+    .main p {
         font-size: 12px;
     }
 
-    .description h3 {
-        font-size: 14px;
+    .description {
+        height: 700px;
+        flex-direction: column;
     }
 
-    .request button {
-        width: 250px;
+    .col {
+        width: 100%;
     }
 
     footer {
@@ -107,20 +97,77 @@
         margin: 1cm;
     }
 
-    .topnav {
+    header {
         display: none;
+    }
+
+    .main {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        background: none;
+    }
+
+    .main h1 {
+        color: #000;
+        font-size: 38px;
+        text-shadow: none;
+        margin: 15px;
+    }
+
+    .main p {
+        color: #000;
+        text-shadow: none;
+        font-size: 18px;
+        padding-left: 10px;
     }
 
     .description {
         background: none;
+        padding: 0;
     }
 
-    .request {
+    .description p {
+        color: #000;
+    }
+
+    .description li {
+        color: #000;
+    }
+
+    .col {
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .col p {
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .col h3 {
+        color: #000;
+        font-size: 22px;
+        margin: 10px;
+    }
+
+    .col ul {
+        text-align-last: left;
+    }
+
+    ul li {
+        list-style: circle;
+        padding-left: 10px;
+    }
+
+    i.fa {
         display: none;
     }
 
     footer {
         background-color: #f1f1f1;
         color: #000;
+        border-top: none;
     }
 }

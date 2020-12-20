@@ -9,7 +9,7 @@ body {
 }
 
 .topnav {
-    background: url(/rk2/img/cow-bg.jpg) no-repeat;
+    background: url(../img/cow-bg.jpg) no-repeat;
     background-position: -130px -200px;
     height: 100vh;
 }
